@@ -7,18 +7,18 @@
 #   Character.create(name: "Luke", movie: movies.first)
 # Seed the RottenPotatoes DB with some movies.
 more_movies = [
-    {:title => 'My Neighbor Totoro', :rating => 'G',
-      :release_date => '16-Apr-1988'},
-    {:title => 'Green Book', :rating => 'PG-13',
-      :release_date => '16-Nov-2018'},
-    {:title => 'Parasite', :rating => 'R',
-      :release_date => '30-May-2019'},
-    {:title => 'Nomadland', :rating => 'R',
-      :release_date => '19-Feb-2021'},
-    {:title => 'CODA', :rating => 'PG-13',
-      :release_date => '13-Aug-2021'}
+    {:title => 'Star Wars: Episode V – The Empire Strikes Back', :rating => 'PG',
+      :release_date => 'May 21, 1980'},
+    {:title => 'Interstellar', :rating => 'PG-13',
+      :release_date => 'October 26, 2014'},
+    {:title => 'The Godfather', :rating => 'R',
+      :release_date => 'March 24, 1972'},
+    {:title => 'Zack Snyder\'s Justice League', :rating => 'R',
+      :release_date => 'March 18, 2021'},
+    {:title => 'About Time', :rating => 'R',
+      :release_date => 'November 1, 2013'}
   ]
-  
+
 more_movies.each do |movie|
     Movie.create!(movie)
 end
